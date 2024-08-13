@@ -1,0 +1,21 @@
+data_warehouse :
+  outputs:
+    dev:
+      dbname: data_warehouse
+      host: localhost
+      pass: postgres
+      port: 5433
+      schema: dbt_dev
+      threads: 1
+      type: postgres
+      user: postgres
+    prod:
+      dbname: data_warehouse
+      host: localhost
+      pass: postgres
+      port: 5433
+      schema: dbt
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
